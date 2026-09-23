@@ -1,0 +1,43 @@
+.registration {
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+}
+
+.event-info,
+form {
+    width: 50%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+select,
+button {
+    padding: 10px;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid blue;
+}
+
+button:hover {
+    background: lightblue;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .registration {
+        flex-direction: column;
+    }
+
+    .event-info,
+    form {
+        width: 100%;
+    }
+}
